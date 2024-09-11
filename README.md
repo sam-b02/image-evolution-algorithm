@@ -37,7 +37,7 @@ This project implements an image evolution algorithm that attempts to recreate a
 
    ```python
    source_image_path = r"source image\your_image.png"
-   number_of_backgrounds = 3
+   number_of_backgrounds = 50
    start_from_custom_image = False
    custom_image_path = r""
    number_of_subdivisions = 512
