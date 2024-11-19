@@ -113,7 +113,6 @@ def final_evolution(
         source_current_image = source_subdivided_images[i][2]
         color_palette = list(np.unique(source_current_image.reshape(-1, source_current_image.shape[2]), axis=0))
         best = rms_diff(current_image, source_current_image)
-        shape_counter = 0
         att = 0
         
         while att < number_of_subdivided_objects:
@@ -124,9 +123,9 @@ def final_evolution(
             if cmp < best:
                 best = cmp
                 if best_print:
-                    print(f"Subdivision {i+1}/{len(subdivided_images)}: New best RMSE = {best:.4f}: Shape Count = {shape_counter}")
+                    print(f"Subdivision {i+1}/{len(subdivided_images)}: New best RMSE = {best:.4f}: Shape Count = {att}")
                 current_image = new_arr
-                att, shape_counter = att + 1, shape_counter + 1
+                att += 1
 
         arr[y : y + sub_HEIGHT, x : x + sub_WIDTH] = current_image
 
