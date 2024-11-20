@@ -141,9 +141,7 @@ def create_white_image(width, height):
     white_image.save(r"frames source\white_image.png")
 
 def main():
-    WIDTH, HEIGHT = get_dimensions(r"video source\input_video.mp4")
-    directory = "frames source"
-
+    video_source = r"video source\input_video.mp4"
     use_custom_background = False #use a custom background
     number_of_subdivisions = 4096 #number of subdivisions the image will be broken into, improves image "resolution"
     number_of_subdivided_objects = 10 #number of objects per subdivision, fills out the image more
@@ -151,6 +149,9 @@ def main():
     best_print = False #debugging tool, use when the image is getting stuck to see where its getting stuck
     clean_output = True #delete files from frames output upon running
     diff_sort = True #changes shape redrawing order. helpful at lower subdivisions, does not add too much at higher.
+
+    WIDTH, HEIGHT = get_dimensions(video_source)
+    directory = "frames source"
  
     if clean_output:
         kill()

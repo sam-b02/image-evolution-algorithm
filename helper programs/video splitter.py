@@ -42,7 +42,7 @@ def split_video_into_frames(video_path, output_folder):
 
 kill()
 
-video_path = r"video source\input_video.mp4"
+video_path = r"video source\input_video.mp4" #place the path of your video here
 output_folder = r"frames source"
 split_video_into_frames(video_path, output_folder)
 
