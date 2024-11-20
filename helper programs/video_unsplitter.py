@@ -37,4 +37,4 @@ def create_video_from_images(folder_path, output_video_path, fps=30):
 
 
 # Example usage:
-create_video_from_images(r"frames output", "output_video.mp4", fps=30)
+create_video_from_images(r"frames output", "output_video.mp4", fps=8)

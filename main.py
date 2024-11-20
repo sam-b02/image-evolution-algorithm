@@ -143,7 +143,7 @@ def create_white_image(width, height):
 def main():
     video_source = r"video source\input_video.mp4"
     use_custom_background = False #use a custom background
-    number_of_subdivisions = 4096 #number of subdivisions the image will be broken into, improves image "resolution"
+    number_of_subdivisions = 14400 #number of subdivisions the image will be broken into, improves image "resolution"
     number_of_subdivided_objects = 10 #number of objects per subdivision, fills out the image more
     target_goal = 0 #rmse goal each subdivision should achieve
     best_print = False #debugging tool, use when the image is getting stuck to see where its getting stuck
