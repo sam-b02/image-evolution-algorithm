@@ -67,6 +67,10 @@ Running the script will clear the output images file, deleting any previous crea
 
 4. **Iterative Refinement**: The process continues until the similarity reaches the target goal or the maximum number of iterations is reached.
 
+# Additional Note
+
+You may prefer the [Video Version of this Algorithm](https://github.com/sam-b02/image-evolution-algorithm/tree/video_evolution), as the images it generates does not have visible subdivision lines. Instructions are provided for how to use it with images.
+
 ## License
 
 [MIT License](LICENSE)
