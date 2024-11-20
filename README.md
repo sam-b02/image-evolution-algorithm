@@ -31,6 +31,7 @@ This project implements an **image evolution algorithm** that recreates a source
 
 ### Step 2: Split Video into Frames
 - Open `helper programs/video splitter.py` and replace the following line with your video path:
+  
    ```python
    video_path = r"video source/input_video.mp4"
    ```
@@ -97,8 +98,9 @@ As this algorithm does not have visible subdivision lines on the image, you may 
 
 1. Place the image you wish to recreate in the `frame source` directory
 2. Replace the "get_dimensions" at line 153 with the actual width and height of the image as shown below:
-   ```WIDTH, HEIGHT = get_dimensions()``` => ```WIDTH, HEIGHT = 512, 512``` (example width and height)
-3. You can then change the parameters and run the program as you please.
+
+   ```WIDTH, HEIGHT = get_dimensions()``` ⇨ ```WIDTH, HEIGHT = 512, 512``` (example width and height)
+4. You can then change the parameters and run the program as you please.
 
    
 ## License
