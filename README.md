@@ -1,11 +1,11 @@
-# Image Evolution Algorithm
+# Video Evolution Algorithm
 
-This project implements an **image evolution algorithm** that recreates a source image (or video) by iteratively adding randomly generated shapes to a blank canvas. The algorithm refines the canvas step by step, improving its similarity to the target image or video frame over time.
+This project implements an **image evolution algorithm** that recreates a source video iteratively adding randomly generated shapes to a blank canvas. The algorithm refines the canvas step by step, improving its similarity to the each video frame over time.
 
 
 ## Features
 
-- Replicate **images** or **videos** frame-by-frame.
+- Replicate videos abstractly frame-by-frame.
 - Fine-tune the algorithm with customizable parameters.
 - Handles both simple and complex visuals using subdivisions and iterative refinement.
 
