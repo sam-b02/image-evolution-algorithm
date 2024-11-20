@@ -141,7 +141,7 @@ def create_white_image(width, height):
     white_image.save(r"frames source\white_image.png")
 
 def main():
-    WIDTH, HEIGHT = get_dimensions(r"video source\video.mp4")
+    WIDTH, HEIGHT = get_dimensions(r"video source\input_video.mp4")
     directory = "frames source"
 
     use_custom_background = False #use a custom background

@@ -3,7 +3,7 @@ import os
 
 
 def kill():
-    directory = "output frames"
+    directory = "frames source"
     for filename in os.listdir(directory):
         file_path = os.path.join(directory, filename)
         os.remove(file_path)
@@ -18,7 +18,7 @@ def split_video_into_frames(video_path, output_folder):
         os.makedirs(output_folder)
 
     # Initialize frame counter
-    frame_count = 0
+    frame_count = 1
 
     while True:
         # Read a frame from the video
@@ -42,7 +42,7 @@ def split_video_into_frames(video_path, output_folder):
 
 kill()
 
-video_path = r"video source\video.mp4"
+video_path = r"video source\input_video.mp4"
 output_folder = r"frames source"
 split_video_into_frames(video_path, output_folder)
 
