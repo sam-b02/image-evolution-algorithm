@@ -14,7 +14,7 @@ This project implements an **image evolution algorithm** that recreates a source
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/sam-b02/image-evolution-algorithm/tree/video_evolution
+   git clone -b video_evolution https://github.com/sam-b02/image-evolution-algorithm.git
    cd image-evolution-algorithm
    ```
 
