@@ -3,7 +3,6 @@ import time
 import random
 import numpy as np
 from PIL import Image, ImageDraw
-from collections import Counter
 
 def rms_diff(image1, image2):
     """Calculate the Root Mean Square Error (RMSE) between two images."""
