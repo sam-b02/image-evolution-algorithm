@@ -6,10 +6,11 @@ import time
 import cv2
 
 def rms_diff(image1, image2):
-    image1_arr = np.asarray(image1, dtype=np.float64)
-    image2_arr = np.asarray(image2, dtype=np.float64)
+    """Calculate the Root Mean Square Error (RMSE) between two images."""
+    image1_arr = np.asarray(image1, dtype=np.float32)
+    image2_arr = np.asarray(image2, dtype=np.float32)
     diff = image1_arr - image2_arr
-    return np.sqrt(np.mean(diff ** 2))
+    return np.sqrt(np.einsum('ijk,ijk->', diff, diff) / diff.size)
 
 def compare_images(image1_path, image2_path):
     image1 = Image.open(image1_path).convert("RGB")
