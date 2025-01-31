@@ -97,12 +97,16 @@ python main.py
 As this algorithm does not have visible subdivision lines on the image, you may want to use this program for images as well, not just videos. Accomplishing this is very simple: 
 
 1. Place the image you wish to recreate in the `frame source` directory
-2. Replace the "get_dimensions" at line 153 with the actual width and height of the image as shown below:
+2. Replace the "get_dimensions" line with the actual width and height of the image as shown below:
 
    ```WIDTH, HEIGHT = get_dimensions()``` ⇨ ```WIDTH, HEIGHT = 512, 512``` (example width and height)
 4. You can then change the parameters and run the program as you please.
 
-   
+LIMITATIONS OF THIS METHOD:
+- Images must be of the same dimensions
+- Images need to be named properly, as the image is picked alphabetically.
+
+  
 ## License
 
 This project is distributed under the [MIT License](LICENSE).
