@@ -1,6 +1,6 @@
 # Video Evolution Algorithm
 
-This project implements an **image evolution algorithm** that recreates a source video iteratively adding randomly generated shapes to a blank canvas. The algorithm refines the canvas step by step, improving its similarity to the each video frame over time.
+This project implements an **image evolution algorithm** that recreates a source video iteratively adding randomly generated shapes to a blank canvas. The algorithm refines the canvas step by step, improving its similarity to the each video frame over time. This version of the algorithm also does not have subdivided lines that the image version does. 
 
 
 ## Features
@@ -14,7 +14,7 @@ This project implements an **image evolution algorithm** that recreates a source
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/sam-b02/image-evolution-algorithm/tree/video_evolution
+   git clone -b video_evolution https://github.com/sam-b02/image-evolution-algorithm.git
    cd image-evolution-algorithm
    ```
 
@@ -31,6 +31,7 @@ This project implements an **image evolution algorithm** that recreates a source
 
 ### Step 2: Split Video into Frames
 - Open `helper programs/video splitter.py` and replace the following line with your video path:
+  
    ```python
    video_path = r"video source/input_video.mp4"
    ```
@@ -91,7 +92,21 @@ python main.py
 | `clean_output`             | Deletes previous outputs from the `frames output` folder before starting.  |
 | `diff_sort`                | Changes the order in which shapes are drawn; useful for enhancing detail.  |
 
+## Usage with images
 
+As this algorithm does not have visible subdivision lines on the image, you may want to use this program for images as well, not just videos. Accomplishing this is very simple: 
+
+1. Place the image you wish to recreate in the `frame source` directory
+2. Replace the "get_dimensions" line with the actual width and height of the image as shown below:
+
+   ```WIDTH, HEIGHT = get_dimensions()``` ⇨ ```WIDTH, HEIGHT = 512, 512``` (example width and height)
+4. You can then change the parameters and run the program as you please.
+
+LIMITATIONS OF THIS METHOD:
+- Images must be of the same dimensions
+- Images need to be named properly, as the image is picked alphabetically.
+
+  
 ## License
 
 This project is distributed under the [MIT License](LICENSE).
